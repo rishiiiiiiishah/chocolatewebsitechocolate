@@ -9,6 +9,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const BACKEND_URL = "https://chocolatewebsitechocolate.onrender.com";
 
     useEffect(() => {
         document.body.classList.add('login-body');
@@ -19,7 +20,8 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('https://chocolatewebsitechocolate.onrender.com/login', {
+            const response = await axios.post(`${BACKEND_URL}/login`, {
+    
                 email,
                 password,
             }, {
@@ -43,7 +45,7 @@ const Login = () => {
     
     const handleSignup = async () => {
         try {
-            const response = await axios.post('https://chocolatewebsitechocolate.onrender.com/signup', {
+            const response = await axios.post(`${BACKEND_URL}/signup`, {
                 name,
                 email,
                 password,
