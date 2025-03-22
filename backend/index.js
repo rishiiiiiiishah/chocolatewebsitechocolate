@@ -9,10 +9,7 @@ const app = express();
 const port = 4000;
 
 // ✅ Middleware setup
-app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-}));
+app.use(cors());
 app.use(express.json());
 
 // ✅ Connect to MongoDB
