@@ -3,19 +3,29 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
+const cookieParser = require('cookie-parser'); 
+const dotenv = require('dotenv');
+const serverless = require('serverless-http');
+
+dotenv.config(); // ✅ Load environment variables before anything else
 
 const app = express();
-const port = 4000;
 
 // ✅ Middleware setup
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: process.env.CLIENT_URL || "http://localhost:3000",
     credentials: true,
 }));
 app.use(express.json());
+app.use(cookieParser());
 
 // ✅ Connect to MongoDB
-mongoose.connect("mongodb+srv://rishiiiishah:2cdm8YZ5XQv0nfij@cluster0.9qrmj2b.mongodb.net/choco");
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+.then(() => console.log("✅ MongoDB Connected"))
+.catch(err => console.error("❌ MongoDB Connection Error:", err));
 
 // ✅ Define User Model
 const Users = mongoose.model('Users', {
@@ -26,7 +36,7 @@ const Users = mongoose.model('Users', {
 
 // ✅ Default route
 app.get("/", (req, res) => {
-    res.send("Express app is running");
+    res.send("Express app is running 🚀");
 });
 
 // ✅ User Signup Route
@@ -47,7 +57,7 @@ app.post('/signup', async (req, res) => {
 
         await user.save();
 
-        const token = jwt.sign({ user: { id: user.id } }, "sercret_choco");
+        const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
         res.cookie('token', token, {
             httpOnly: true,
@@ -77,7 +87,8 @@ app.post('/login', async (req, res) => {
             return res.status(400).json({ success: false, errors: "Incorrect password" });
         }
 
-        const token = jwt.sign({ user: { id: user.id } }, "sercret_choco", { expiresIn: '1d' });
+        // ✅ Fixed JWT Secret
+        const token = jwt.sign({ user: { id: user.id } }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
         return res.cookie('token', token, {
             httpOnly: true,
@@ -98,7 +109,6 @@ app.get('/logout', (req, res) => {
     res.json({ success: true, message: "Logout successful" });
 });
 
-// ✅ Start Server
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+// ✅ Vercel Serverless Function
+module.exports = app;
+module.exports.handler = serverless(app);
