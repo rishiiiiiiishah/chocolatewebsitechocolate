@@ -1,9 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
 const cors = require('cors');
 const { error } = require('console');
+const bcrypt = require('bcryptjs');
+
 const app = express();
 const port = 4000;
 
