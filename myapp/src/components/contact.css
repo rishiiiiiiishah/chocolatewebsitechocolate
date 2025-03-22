@@ -1,0 +1,194 @@
+body {
+  background-color: rgba(35, 146, 174, 0.088);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bhadi p {
+  margin-left: -10px;
+  margin-top: 20px;
+}
+
+.contact-container h1 {
+  color: rgb(215, 165, 78);
+}
+
+.socia-icons {
+  margin-left: -20px;
+}
+
+.socia-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.socia-icons i {
+  font-size: 24px;
+}
+
+.center-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.center-line {
+  width: 100%;
+  height: 2px;
+  background-color: goldenrod;
+  margin: 20px 0;
+}
+
+.center-lin {
+  width: 2px;
+  height: 100%;
+  background-color: goldenrod;
+  margin: 0 20px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensures the children stretch to the height of the container */
+  height: 100%; /* Set a height for the container */
+}
+
+.left-side {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.right-side {
+  flex: 1;
+  padding-left: 40px;
+  margin-top: 100px;
+}
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="textt"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 10px;
+  background-color: rgb(215, 165, 78);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(194, 149, 71);
+}
+
+
+.contact-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.socia-icons {
+  margin-top: 10px;
+}
+
+.addres {
+  color: #333; /* Adjust the color as needed */
+  margin-left: -10px; /* Adjust the value to move it to the left */
+}
+
+.ad {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-side,
+  .right-side {
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .contact-container {
+    padding: 10px;
+  }
+
+  .left-side,
+  .right-side,
+  form,
+  .contact-image,
+  .socia-icons,
+  .addres {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  input[type="textt"],
+  input[type="email"],
+  textarea,
+  select,
+  button {
+    width: 100%;
+    align-self: center;
+  }
+
+  .center-lin {
+    display: none; /* Hide the vertical line on smaller screens */
+  }
+}

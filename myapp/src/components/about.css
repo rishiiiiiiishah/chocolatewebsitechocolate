@@ -1,0 +1,180 @@
+.pro {
+   
+    text-align: center;
+    margin-top: 60px;
+  
+    font-family: 'Newsreader';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(112, 81, 31);
+}
+
+.diamond {
+    text-align: center;
+  margin-top: 75px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-item {
+    flex: 1 1 20%;
+    max-width: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+.about-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.team {
+    text-align: center;
+    font-family: 'Newsreader';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(112, 81, 31);
+    
+   
+    
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.team-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: rgb(66, 12, 12);
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: rgb(68, 10, 10);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .team-card {
+        width: 45%;
+    }
+    .diamond {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .team-card {
+        width: 90%;
+    }
+}
+.diamon img {
+   width: 80px;
+   margin-top: 10px;
+
+}
+
+.diamon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px; /* Center the diamond and add margin */
+}
+
+.team {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+   
+  }
+  
+  .team-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(240, 223, 71, 0.574);
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  
+  }
+  
+  .team-info {
+    padding: 10px;
+  }
+  
+  .read-more {
+    color: rgb(138, 121, 26);
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .additional-info {
+    margin-top: 10px;
+    text-align: left;
+  }

@@ -1,0 +1,151 @@
+.footer {
+    background: rgb(31, 16, 1);
+    padding: 20px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 60px;
+}
+.p {
+    color: antiquewhite;
+}
+.foo {
+    display: flex;
+    flex-direction: column; /* Default to vertical layout */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    gap: 15px; /* Vertical gap between elements */
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Decreased vertical margin */
+}
+
+.nav__brand {
+    font-size: 24px;
+    color: rgb(216, 150, 120);
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.foot {
+    color: white;
+    font-size: 30px;
+    margin: 5px 0; /* Decreased vertical margin */
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Decreased vertical margin */
+}
+
+.add {
+    color: white;
+    font-size: 20px;
+    margin: 5px 0; /* Decreased vertical margin */
+}
+
+.address {
+    color: antiquewhite;
+    font-size: 16px;
+    margin: 10px 0; /* Decreased vertical margin */
+    word-wrap: break-word;
+}
+
+.contact {
+    margin: 15px 0; /* Decreased vertical margin */
+  
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: antiquewhite;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: rgb(216, 150, 120);
+}
+
+.footer-line {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust line color and thickness as needed */
+    margin: 20px 0;
+}
+
+.footer-text {
+    font-size: 14px;
+        color: aliceblue;
+  
+}
+.footer-text p {
+
+        color: aliceblue;
+  
+}
+
+@media screen and (min-width: 769px) {
+    .foo {
+        flex-direction: row; /* Switch to horizontal layout */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        gap: 250px; /* Increased horizontal gap */
+    }
+
+    .brand-container, .address-container, .contact {
+        align-items: center; /* Center items vertically */
+        margin: 0; /* Remove vertical margins for horizontal layout */
+    }
+
+    .address {
+        margin-top: 0; /* Remove vertical margins for horizontal layout */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__brand {
+        font-size: 22px;
+    }
+    .foot, .add, .contact {
+        font-size: 18px;
+    }
+    .address {
+        font-size: 14px;
+    }
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav__brand {
+        font-size: 20px;
+    }
+    .foot, .add, .contact {
+        font-size: 16px;
+    }
+    .address {
+        font-size: 12px;
+    }
+    .social-icons a {
+        font-size: 18px;
+    }
+}

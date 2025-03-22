@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures the content wraps on smaller screens */
+    margin-top: 120px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.text-content h2 {
+    color: #d7a54e; /* Golden color */
+    font-size: 35px;
+    font-family: 'Newsreader', serif; /* Ensure the font is correctly imported */
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #55201e; /* Darker shade of brown */
+    font-size: 16px; /* Slightly larger font size for readability */
+    line-height: 1.5; /* Improved line spacing */
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add some rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .text-content {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 20px; /* Adds space between text and image */
+    }
+
+    .image-content {
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .text-content p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-content h2 {
+        font-size: 25px; /* Adjust font size for even smaller screens */
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+}
+
+
+.diamm img {
+    height: 12px;
+    margin-left: -70px;
+  margin-top: 0px;
+  
+  }
+  
+  
+  .diamm {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  @media screen and (max-width: 500px) {
+    .diamm img {
+       margin-left: 30px;
+    }
+  }

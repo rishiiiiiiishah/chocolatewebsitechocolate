@@ -1,0 +1,188 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgb(242, 243, 243);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.popular h1 {
+  color: rgb(112, 81, 31);
+  font-size: 5rem;
+  margin-bottom: -20px;
+}
+
+.popular p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: rgb(159, 122, 53);
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 20px;
+}
+
+.popular img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.diamond-image {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.front-cake-im img {
+  width: 100px;
+  margin-top: 20px;
+  height: auto;
+  margin-right: 800px;
+
+}
+
+.popular hr {
+  width: 100%;
+  max-width: 500px;
+  height: 1px;
+  border: none;
+  background-color: #582626ac;
+  margin: 20px 0;
+}
+
+.popular-item {
+  background-color: rgb(235, 218, 222);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Ensure there is space between items */
+}
+
+.popular-item > div {
+  background-color: #f9f9f9; /* Light background for item */
+  position: relative; /* Needed for absolute positioning of overlay */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 1 calc(25% - 20px);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Hide overflow for the overlay */
+  width: 250px; /* Set width for square shape */
+  height: 250px; /* Set height for square shape */
+}
+
+.popular-item > div:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular-item img {
+  width: 100%; /* Ensure image fills the container */
+  height: 100%; /* Ensure image fills the container */
+  object-fit: cover; /* Ensures the images cover the container without distortion */
+  border-radius: 10px;
+}
+
+.popular-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: white;
+  opacity: 0; /* Hidden by default */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+  border-radius: 10px;
+}
+
+.popular-item > div:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.new-price {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+
+.old-price {
+  font-size: large;
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1024px) {
+  .popular-item > div {
+    flex: 0 1 calc(33.33% - 20px);
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .popular h1 {
+    font-size: 2.5rem;
+  }
+
+  .popular p {
+    font-size: 1.2rem;
+  }
+
+  .diamond-image {
+    width: 80px;
+  }
+
+  .front-cake-im {
+    width: 150px; /* Adjusted width */
+    margin-right: auto; /* Center the image horizontally */
+    margin-top: -30px;
+  }
+
+  .popular-item > div {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .popular h1 {
+    font-size: 4rem;
+  }
+
+  .popular p {
+    font-size: 1rem;
+  }
+
+  .diamond-image {
+    width: 60px;
+  }
+
+  .front-cake-im{
+    width: 70px; /* Adjusted width */
+    margin-right: auto; /* Center the image horizontally */
+    margin-top: -20px;
+  }
+
+  .popular-item > div {
+    flex: 0 1 calc(100% - 20px);
+  }
+}

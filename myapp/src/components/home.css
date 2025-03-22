@@ -1,0 +1,292 @@
+.homeClass img {
+   
+width: 500px;
+margin-top: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.button-wrapper {
+    text-align: center;
+    margin-top: 180px;
+  }
+  
+  .aboutya {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #69c4b8a8;
+    color: rgba(174, 105, 26, 0.816);
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #d7a54e; /* Golden border */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .aboutya:hover {
+    background-color: #45c4b5;
+  }
+.diamo img {
+    height: 20px;
+  margin-top: -100px;
+ 
+}
+
+
+.diamo {
+    display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.homeClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text h2 {
+    color: rgb(215, 165, 78);
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Newsreader';
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+
+}
+
+.text h6 {
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(85, 30, 30);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text1 h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ri {
+    display: flex;    
+align-items: center;
+justify-content: center;
+
+
+}
+.text2  {
+    margin-top: -60px;
+}
+.class2 h2 {
+margin-left: 1000px;
+margin-top: -400px;
+}
+
+.class2 h6 {
+    margin-top: -2px;
+    margin-left: 1000px;
+    }
+
+
+
+
+    .text3  {
+        margin-top: 420px;
+    }
+    .class3 h2 {
+    margin-left: 1000px;
+    margin-top: 100px;
+    }
+    
+    .class3 h6 {
+        margin-top: -200px;
+        margin-left: 1000px;
+        }
+        .text3 h6 {
+            margin-top: -400px;
+        }
+        .text4 h6 {
+            margin-top: 2px;
+        }
+
+
+
+
+
+
+        .text5  {
+            margin-top: 420px;
+            margin-left: -1800px;
+        }
+        .class4 h2 {
+        margin-left: -1000px;
+        margin-top: -280px;
+
+        }
+        
+        .class4 h6 {
+            margin-top: -200px;
+            margin-left: -1000px;
+            }
+            .text5 h6 {
+                margin-top: -400px;
+                margin-left: 800px;
+            }
+            .text6 h6 {
+                margin-top: 2px;
+            }
+
+
+
+
+
+
+            
+
+        .text7 {
+            margin-top: 420px;
+            margin-left: -1800px;
+        }
+        .class5 h2 {
+        margin-left: -1000px;
+        margin-top: -280px;
+
+        }
+        
+        .class5 h6 {
+            margin-top: -200px;
+            margin-left: -1000px;
+            }
+            .text7 h6 {
+                margin-top: -400px;
+                margin-left: 800px;
+            }
+            .text8 h6 {
+                margin-top: 2px;
+            }
+
+            .class5 {
+                margin-top: 370px;
+            }
+
+
+            
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .all4wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeClass img {
+        margin-top: 20px;
+    }
+    .diamo img {
+        margin-top: -0px;
+    }
+    .class2, .class3, .class4, .class5 {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text2, .text3, .text4, .text5, .text6, .text7, .text8 {
+        margin: 0;
+    }
+
+    .homeClass img {
+        width: 100%;
+        margin-top: 20px;
+        max-width: 300px; /* Adjust as needed for better responsiveness */
+    }
+
+    .class2 h2, .class3 h2, .class4 h2, .class5 h2 {
+        margin-left: 0;
+       margin-top: 0px;
+    }
+
+    .class2 h6, .class3 h6, .class4 h6, .class5 h6 {
+        margin-left: 0;
+        margin-top: 0px;
+    }
+
+    .text h2 {
+        font-size: 28px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .text h6, .text1 h6, .text2 h6, .text3 h6, .text4 h6, .text5 h6, .text6 h6, .text7 h6, .text8 h6 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .button1 {
+        margin-top: 200px; /* Adjust as needed */
+    }
+}
+
+
+@media screen and (max-width: 500px)
+
+{
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .button1 {
+        margin-top: 200px; /* Adjust as needed */
+    }
+    .homeClass img {
+        margin-top: 20px;
+    }
+
+    .button-wrapper {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+    
+}
+
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.button1 button {
+    background-color: lightblue;
+    color: rgb(98, 70, 21); /* Brown text */
+    border: 2px solid rgb(215, 165, 78);/* Brown border */
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button1 button:hover {
+    background-color: rgb(173, 216, 230); /* Lighter blue on hover */
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .button1 {
+        margin-top: 50px;
+    }
+    .homeClass img {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,126 @@
+.cart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .cart-item-name {
+    font-size: 18px;
+    color: goldenrod;
+  }
+  
+  .cart-item-price {
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .remove-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 3px 6px; /* Reduce padding */
+    cursor: pointer;
+    border-radius: 3px; /* Smaller border radius */
+    font-size: 12px; /* Smaller text */
+    width: 60px; /* Set a fixed width */
+    height: 25px; /* Set a fixed height */
+}
+
+  
+  .cart-total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .cart-total {
+    text-align: center; /* Center the total amount */
+    font-size: 10px; /* Make the text size decent */
+    font-weight: bold; /* Emphasize the total */
+    color: #333; /* Darker color for readability */
+    margin-bottom: 15px; /* Space before the button */
+}
+
+.proceed-button {
+    display: block;
+    width: 60%; /* Decent size for the button */
+    max-width: 200px; /* Prevent too wide button */
+    padding: 10px;
+    margin: 0 auto; /* Center the button */
+    background-color: green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Make button text readable */
+}
+
+
+  
+  .checkout-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .payment-button {
+    width: 100px;
+    height: 30px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
