@@ -9,7 +9,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-    const BACKEND_URL = "https://chocolatewebsitechocolate.vercel.app/";
+    const BACKEND_URL = "https://chocolatewebsitechocolate.vercel.app";
 
     useEffect(() => {
         document.body.classList.add('login-body');
