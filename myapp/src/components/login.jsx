@@ -19,7 +19,7 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:4000/login', {
+            const response = await axios.post('https://chocolatewebsitechocolate.onrender.com/login', {
                 email,
                 password,
             }, {
@@ -43,7 +43,7 @@ const Login = () => {
     
     const handleSignup = async () => {
         try {
-            const response = await axios.post('http://localhost:4000/signup', {
+            const response = await axios.post('https://chocolatewebsitechocolate.onrender.com/signup', {
                 name,
                 email,
                 password,
