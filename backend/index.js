@@ -9,7 +9,12 @@ const app = express();
 const port = 4000;
 
 // ✅ Middleware setup
-app.use(cors());
+app.use(cors({
+    origin: [
+        "https://chocolatewebsitechocolate-ajas.vercel.app"
+    ],
+    credentials: true,
+}));
 app.use(express.json());
 
 // ✅ Connect to MongoDB
