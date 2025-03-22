@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
+const { error } = require('console');
 const app = express();
 const port = 4000;
 
@@ -37,7 +38,10 @@ const Users = mongoose.model('Users', {
 
 // ✅ Default route
 app.get("/", (req, res) => {
-    res.send("Express app is running");
+    res.send({
+        activeStatus:true,
+        error:false,
+    })
 });
 
 // ✅ User Signup Route
