@@ -11,7 +11,8 @@ const port = 4000;
 // ✅ Middleware setup
 app.use(cors({
     origin: [
-        "https://chocolatewebsitechocolate-ajas.vercel.app"
+        "https://chocolatewebsitechocolate-ajas.vercel.app","http://localhost:3000","https://chocolatewebsitechocolate-iixy.vercel.app"
+
     ],
     credentials: true,
 }));
